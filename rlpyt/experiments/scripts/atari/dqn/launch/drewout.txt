@@ -1,0 +1,9 @@
+2020-06-08 11:35:30.353386  | breakout_0 Runner  master CPU affinity: [8].
+2020-06-08 11:35:30.353555  | breakout_0 Runner  master Torch threads: 1.
+[32musing seed 3169[0m
+2020-06-08 11:35:30.378497  | breakout_0 Total parallel evaluation envs: 4.
+[32musing seed 3170[0m
+2020-06-08 11:35:31.134460  | breakout_0 Sampler rank 0 initialized, CPU affinity [8], Torch threads 1, Seed 3170
+
+call string:
+ taskset -c 0,8 /users/akarkada/anaconda/torch/bin/python /gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/experiments/scripts/atari/dqn/train/atari_r2d1_gpu.py 0slt_1cpu_1gpu_8hto /gpfs/data/tserre/akarkada/drl/rlpyt/data/local/20200608/113528/atari_r2d1_basic/breakout 0 r2d1

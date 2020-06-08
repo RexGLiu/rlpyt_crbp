@@ -1,0 +1,10 @@
+module: loading 'anaconda/3-5.2.0'
+module: unloading 'cuda/9.0.176'
+module: loading 'cuda/10.1.105'
+module: unloading 'gcc/4.9.4'
+module: loading 'gcc/5.4'
+module: gcc: "Note: loading the gcc module overrides the gcc version on the system.  If you want to revert to the version of gcc provided by the OS, unload the gcc module."
+module: loading 'ninja/1.9.0'
+/users/akarkada/anaconda/torch/bin/python: can't open file 'rlpyt/experiments/scripts/atari/dqn/train/atari_r2d1_gpu.py': [Errno 2] No such file or directory
+/users/akarkada/anaconda/torch/bin/python: can't open file 'rlpyt/experiments/scripts/atari/dqn/train/atari_r2d1_gpu.py': [Errno 2] No such file or directory
+slurmstepd: error: *** JOB 13263780 ON gpu2003 CANCELLED AT 2020-06-08T14:21:48 ***

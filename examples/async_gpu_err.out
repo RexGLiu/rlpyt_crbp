@@ -1,0 +1,7 @@
+module: loading 'anaconda/3-5.2.0'
+module: unloading 'cuda/9.0.176'
+module: loading 'cuda/10.1.105'
+module: unloading 'gcc/4.9.4'
+module: loading 'gcc/5.4'
+module: gcc: "Note: loading the gcc module overrides the gcc version on the system.  If you want to revert to the version of gcc provided by the OS, unload the gcc module."
+module: loading 'ninja/1.9.0'

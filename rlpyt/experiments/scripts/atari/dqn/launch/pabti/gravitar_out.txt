@@ -1,0 +1,5 @@
+[32musing seed 9701[0m
+2020-06-01 22:33:05.986338  | async_alt_gravitar_0 Running 1892000 sampler iterations.
+2020-06-01 22:33:06.213677  | async_alt_gravitar_0 Frame-based buffer using 4-frame sequences.
+2020-06-01 22:33:21.161589  | async_alt_gravitar_0 Agent setting min/max epsilon itrs: 9, 94
+2020-06-01 22:33:21.201806  | async_alt_gravitar_0 Total parallel evaluation envs: 44.

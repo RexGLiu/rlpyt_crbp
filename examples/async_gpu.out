@@ -1,0 +1,9 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 13234660
+##  Job Name : gpu_breakout
+##  Nodelist : gpu2007
+##      CPUs : 16
+##  Mem/Node : 102400 MB
+## Directory : /gpfs/data/tserre/akarkada/drl/rlpyt/examples
+##   Started : Tue  2 Jun 00:22:22 EDT 2020
+###############################################################################

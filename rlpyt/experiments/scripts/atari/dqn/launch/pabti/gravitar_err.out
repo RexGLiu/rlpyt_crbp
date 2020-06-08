@@ -1,0 +1,99 @@
+module: loading 'anaconda/3-5.2.0'
+module: unloading 'cuda/9.0.176'
+module: loading 'cuda/10.1.105'
+module: unloading 'gcc/4.9.4'
+module: loading 'gcc/5.4'
+module: gcc: "Note: loading the gcc module overrides the gcc version on the system.  If you want to revert to the version of gcc provided by the OS, unload the gcc module."
+module: loading 'ninja/1.9.0'
+Traceback (most recent call last):
+  File "/users/akarkada/anaconda/torch/lib/python3.7/site-packages/psutil/_pslinux.py", line 1954, in cpu_affinity_set
+    cext.proc_cpu_affinity_set(self.pid, cpus)
+OSError: [Errno 22] Invalid argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/experiments/scripts/atari/dqn/train/atari_r2d1_async_alt.py", line 48, in <module>
+    build_and_train(*sys.argv[1:])
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/experiments/scripts/atari/dqn/train/atari_r2d1_async_alt.py", line 44, in build_and_train
+    runner.train()
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/runners/async_rl.py", line 87, in train
+    throttle_itr, delta_throttle_itr = self.startup()
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/runners/async_rl.py", line 161, in startup
+    throttle_itr, delta_throttle_itr = self.optim_startup()
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/runners/async_rl.py", line 173, in optim_startup
+    p.cpu_affinity(main_affinity["cpus"])
+  File "/users/akarkada/anaconda/torch/lib/python3.7/site-packages/psutil/__init__.py", line 837, in cpu_affinity
+    self._proc.cpu_affinity_set(list(set(cpus)))
+  File "/users/akarkada/anaconda/torch/lib/python3.7/site-packages/psutil/_pslinux.py", line 1516, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/users/akarkada/anaconda/torch/lib/python3.7/site-packages/psutil/_pslinux.py", line 1967, in cpu_affinity_set
+    "between %s" % (cpu, eligible_cpus))
+ValueError: CPU number 0 is not eligible; choose between [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+Process Process-5:2:
+Traceback (most recent call last):
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/managers.py", line 811, in _callmethod
+    conn = self._tls.connection
+AttributeError: 'ForkAwareLocal' object has no attribute 'connection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/async_/gpu_sampler.py", line 148, in action_server_process
+    self.launch_workers(double_buffer_slice, affinity, seed, n_envs_list)
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/async_/alternating_sampler.py", line 27, in launch_workers
+    super().launch_workers(double_buffer_slice, affinity, seed, n_envs_list)
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/async_/gpu_sampler.py", line 186, in launch_workers
+    self.examples, sum(n_envs_list))
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/parallel/gpu/sampler.py", line 136, in build_step_buffer
+    for k in ["observation", "action", "reward", "done", "agent_info"]}
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/parallel/gpu/sampler.py", line 136, in <dictcomp>
+    for k in ["observation", "action", "reward", "done", "agent_info"]}
+  File "<string>", line 2, in __getitem__
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/managers.py", line 815, in _callmethod
+    self._connect()
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/managers.py", line 802, in _connect
+    conn = self._Client(self._token.address, authkey=self._authkey)
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/connection.py", line 492, in Client
+    c = SocketClient(address)
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/connection.py", line 619, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory
+Process Process-5:1:
+Traceback (most recent call last):
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/managers.py", line 811, in _callmethod
+    conn = self._tls.connection
+AttributeError: 'ForkAwareLocal' object has no attribute 'connection'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/async_/gpu_sampler.py", line 148, in action_server_process
+    self.launch_workers(double_buffer_slice, affinity, seed, n_envs_list)
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/async_/alternating_sampler.py", line 27, in launch_workers
+    super().launch_workers(double_buffer_slice, affinity, seed, n_envs_list)
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/async_/gpu_sampler.py", line 186, in launch_workers
+    self.examples, sum(n_envs_list))
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/parallel/gpu/sampler.py", line 136, in build_step_buffer
+    for k in ["observation", "action", "reward", "done", "agent_info"]}
+  File "/gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/samplers/parallel/gpu/sampler.py", line 136, in <dictcomp>
+    for k in ["observation", "action", "reward", "done", "agent_info"]}
+  File "<string>", line 2, in __getitem__
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/managers.py", line 815, in _callmethod
+    self._connect()
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/managers.py", line 802, in _connect
+    conn = self._Client(self._token.address, authkey=self._authkey)
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/connection.py", line 492, in Client
+    c = SocketClient(address)
+  File "/users/akarkada/anaconda/torch/lib/python3.7/multiprocessing/connection.py", line 619, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory
+slurmstepd: error: *** JOB 13234054 ON gpu2002 CANCELLED AT 2020-06-08T14:21:42 ***

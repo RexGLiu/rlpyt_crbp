@@ -1,0 +1,7 @@
+Experiment manager process ID: 3161.
+Number of settings (experiments) to run: 4  (8).
+
+pong
+seaquest
+qbert
+chopper_command

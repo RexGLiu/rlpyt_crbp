@@ -1,0 +1,9 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 13234054
+##  Job Name : gravitar
+##  Nodelist : gpu2002
+##      CPUs : 24
+##  Mem/Node : 102400 MB
+## Directory : /gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/experiments/scripts/atari/dqn/launch/pabti
+##   Started : Mon  1 Jun 22:32:46 EDT 2020
+###############################################################################

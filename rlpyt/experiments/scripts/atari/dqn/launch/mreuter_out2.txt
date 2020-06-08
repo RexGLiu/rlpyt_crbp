@@ -1,0 +1,6 @@
+
+call string:
+ taskset -c 0,1,2,3,8,9,10,11 /users/akarkada/anaconda/torch/bin/python /gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/experiments/scripts/atari/dqn/train/atari_r2d1_gpu.py 0slt_4cpu_1gpu_8hto /gpfs/data/tserre/akarkada/drl/rlpyt/data/local/20200607/115303/atari_r2d1_basic/breakout 0 r2d1
+
+call string:
+ taskset -c 0,1,2,3,8,9,10,11 /users/akarkada/anaconda/torch/bin/python /gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/experiments/scripts/atari/dqn/train/atari_r2d1_gpu.py 0slt_4cpu_1gpu_8hto /gpfs/data/tserre/akarkada/drl/rlpyt/data/local/20200607/115303/atari_r2d1_basic/breakout 1 r2d1

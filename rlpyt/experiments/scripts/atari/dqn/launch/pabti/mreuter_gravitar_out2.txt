@@ -1,0 +1,8 @@
+2020-06-08 11:11:00.482904  | Executing mreuter_launch_atari_r2d1_async_alt_gravitar_v2.py...
+asdf asdf asdf:  ['gravitar']
+2020-06-08 11:11:00.503403  | Running experiments...
+[32musing seed 3082[0m
+2020-06-08 11:11:03.449382  | async_alt_gravitar_0 Running 1892000 sampler iterations.
+2020-06-08 11:11:03.676030  | async_alt_gravitar_0 Frame-based buffer using 4-frame sequences.
+2020-06-08 11:11:18.318526  | async_alt_gravitar_0 Agent setting min/max epsilon itrs: 9, 94
+2020-06-08 11:11:18.331571  | async_alt_gravitar_0 Total parallel evaluation envs: 44.

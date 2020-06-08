@@ -1,0 +1,9 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 13418853
+##  Job Name : r2d1
+##  Nodelist : gpu2006
+##      CPUs : 4
+##  Mem/Node : 102400 MB
+## Directory : /gpfs/data/tserre/akarkada/drl/rlpyt/rlpyt/experiments/scripts/atari/dqn/launch
+##   Started : Sun  7 Jun 02:18:52 EDT 2020
+###############################################################################
